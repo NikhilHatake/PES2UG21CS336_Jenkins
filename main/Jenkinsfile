@@ -8,9 +8,7 @@ pipeline {
         }
         stage('Build') {
             steps {
-                dir('main') {
                     sh 'g++ -o output main/main.cpp'
-                }
             }
         }
         stage('Test') {
