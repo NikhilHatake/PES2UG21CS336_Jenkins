@@ -9,7 +9,7 @@ pipeline {
         stage('Build') {
             steps {
                 dir('main') {
-                    sh 'g++ main/main.cpp -o output'
+                    sh 'g++ -o output main/main.cpp'
                 }
             }
         }
