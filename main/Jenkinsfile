@@ -7,10 +7,10 @@ pipeline {
             }
         }
         stage('Build') {
-                steps {
-                    dir('main') {
-                        sh 'g++ main.cpp -o output'
-                    }
+            steps {
+                dir('main') {
+                    sh 'g++ main.cpp -o output'
+                }
             }
         }
         stage('Test') {
